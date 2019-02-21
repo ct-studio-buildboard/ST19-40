@@ -1,0 +1,27 @@
+company:
+  name: Archetype
+  logo: images/logo.jpg
+product_narrative:
+  Companies spend millions of dollars and thousands of hours to create and manage typeface on their websites. Archetype automatically generates new typeface customized for their unique brand strategy.
+team:
+  picture: images/logo.jpg
+  roster:
+  - name: Anastasios Belesiotis
+    email: ab2733@cornell.edu
+    picture: images/anastasios.jpg
+    program: ORIE
+  - name: Dinesh Malla
+    email: dm767@cornell.edu
+    picture: images/malla.jpg
+    program: MBA
+  - name: Hongsun Kim
+    email: hk442@cornell.edu
+    picture: images/hongsun.jpg
+    program: ORIE
+  - name: Michael Garber-Barron
+    email: mgb249@cornell.edu
+    picture: images/Michael.jpb
+    program: CS
+assets:
+- title: Sprint 1
+  url: https://docs.google.com/presentation/d/1Uk9r5mxZVejVXEG9AYBpv5YiaoLd0HAM6SL-pnPI0GI/edit?usp=sharing
