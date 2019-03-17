@@ -1,0 +1,9 @@
+version: 1
+experiments:
+  mnist_dev_test:
+    image: pytorch/pytorch:latest
+    hardware:
+      gpu: k80
+    command:
+      - cd /snark/neural_transfer/
+      - python main.py
