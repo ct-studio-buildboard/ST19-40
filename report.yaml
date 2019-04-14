@@ -1,6 +1,7 @@
 company:
   name: Archetype
   logo: images/logo.png
+product_hmw: How might we help companies simplify the mechanical and tedious design processes to achieve a faster global expansion?
 product_narrative:
   Companies spend millions of dollars and thousands of hours to create and manage typeface on their websites. Archetype automatically generates new typeface customized for their unique brand strategy.
 team:
