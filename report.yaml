@@ -3,7 +3,7 @@ company:
   logo: images/logo.png
 product_hmw: How might we help companies simplify the mechanical and tedious design processes to achieve a faster global expansion?
 product_narrative:
-  Companies spend millions of dollars and thousands of hours to create and manage typeface on their websites. Archetype automatically generates new typeface customized for their unique brand strategy.
+  Companies are getting global and the world is getting smaller. When companies enter into a new market, they need to modify their designs, such as branding, logos, typefaces and UI/UX, to match the social and cultural norms of the area. Our vision for Archetype is to take these mechanical and tedious design processes related to internationalization and simplify them using AI to enable companies achieve a faster global expansion.
 team:
   picture: images/team.jpg
   roster:
