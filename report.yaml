@@ -3,7 +3,7 @@ company:
   logo: images/logo.png
 product_hmw: How might we help companies simplify the mechanical and tedious design processes to achieve a faster global expansion?
 product_narrative:
-  Companies are getting global and the world is getting smaller. When companies enter into a new market, they need to modify their designs, such as branding, logos, typefaces and UI/UX, to match the social and cultural norms of the area. Our vision for Archetype is to take these mechanical and tedious design processes related to internationalization and simplify them using AI to enable companies achieve a faster global expansion.
+  Archetype allows organizations to build a globally unique brand identity by automatically expanding their custom typeface to new alphabets.
 team:
   picture: images/team.jpg
   roster:
