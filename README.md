@@ -1,63 +1,56 @@
-# What you need to do?
-* [ ] add correct information and assets about your startup/bigco project and your team (see instructions below)
 
-For questions you may have, feel free to email [hellostudio@cornell.edu](mailto:hellostudio@cornell.edu?subject=Buildboard).
+Summary:
 
-# Why?
-For Studio Spring 2019, we are asking you to use Github to keep track of your progress.
+This project consists of a software, algorithms for converting english letters in a particular font to ones in Greek. Using the training model, and
+the font extractor this can also be extended to a range of languages. It includes code to run methods for learning font style transfer, as
+well as a front end prototype that actually runs the full pipeline with a front end representation.
 
-For this purpose, we have created one private Github repo for each team, under ct-studio-buildboard.
+Runtime Instructions and parameters:
 
-The name of the repository corresponds to the name and number of your team.
+Prior to running:
+Place the file from the link below in file in 'full_models' named as 'gen_D'
 
-# What is the private repo for?
 
-Feel free to use the repository as you see fit.
+Running example frontend:
+1. Install the requirements specified in 'requirements.txt'
+2. In a terminal CD into the project folder and then into : "/full_models"
+3. From that terminal location run app.py
+4. In chrome run http://127.0.0.1:5000/
+5. Upload any jpg of font to see it's mapping in greek. There is a sample letter in the file. You can also try other
+   jpg images with weird, but sometimes font like results :)
 
-The repo is private: only your team and the Studio team have access to the content of the repository.
-Nobody else from Cornell Tech, nobody else from the outside.
+Running trainer:
+1. Ensure you have cuda.gpu available
+2. Install the requirements specified in 'requirements.txt'
+3. Place your fonts in the relevant folder /fonts
 
-# How do I provide data about my project?
-For reporting, we ask you to create and update a special file called `report.yaml` inside this repository.
-We will use this file to automatically generate reports and a website for all projects .
+Running generator:
+2. Install the requirements specified in 'requirements.txt'
+3. Run /primary_code/models/run_model_wrapper.py - it will just output numbers, but can be used for more stuff
 
-The report.yaml file used the YAML file format (syntax definition, on-line syntax checker) and should following the structure defined below.
 
-We also ask you to upload logos, individual pictures and team pictures and provide a link in the `report.yaml` file.
+Relevant Files and Folder:
 
-Here is a concrete example from last year.
+/primary_code: Contains code used to run a general front end and run models
 
-```yaml
-company:
-  name: Team Awesome
-  logo: Cornell_NYC_Tech_logo.png
-product_hmw: How might we showcase Cornell Tech students work?
-product_narrative: |
-  Cornell Tech students build some amazing things. But it is often hard to show it to outside people.
-  With BuildBoard, we let students provide regular updates about their work and create a Web version of it.
-team:
-  picture: E383E868-.jpg
-  roster:
-  - name: Rachel Sobel
-    email: rachel.sobel.cornell@gmail.com
-    picture: rachel.jpg
-    program: LLM
-  - name: Arnaud Sahuguet
-    email: arnaud.sahuguet@cornell.edu
-    picture: arnaud.png
-    program: MBA
-assets:
-- title: Sprint 1
-  url: http://cornelltech.io/spice-up-your-personal-privacy-with-pepr/
-- title: Sprint 2
-  url: http://cornelltech.io/health-apps-on-steroids/
-```
+/primary_code/app.py: Contains code to run our UI and interface with the model
 
-# How will this information be used?
-This information will be used to generate a website featuring all Studio projects.
-* For Startup Studio: http://buildboard-10044.cornelltech.io/startup-studio-2019
-* For BigCo Studio: http://buildboard-10044.cornelltech.io/bigco-studio-2019
+/font_extractor:contains code for font extraction
 
-# How do I know if I did the right thing?
-The output of our automated process writes to file `buildboard.log` in your team repository.
-We try to provide feedback when things went wrong, e.g. missing file, bad YAML syntax, etc. 
+/font_extractor/font_extractor.py: code to extract fonts in arbitrary languages
+
+/primary_code/models: Contains code used to train, and generate a model
+
+/primary_code/models/helper_functions.py: support functions for visualizing and loading data
+
+/primary_code/models/run_model_wrapper.py: contains code for running a preloaded generator model
+
+/primary_code/models/train_unet_gan.py: contains code for training our model
+
+/primary_code/models/unet_with_gan.py: contains code to generate a descriminator
+
+/primary_code/comparison_model: Modification of code that did not generalize for doing style transfer mapping
+
+
+Notes/Issues*:
+    Please note the trainer code was tested on a linux environment, and the rest on mac and may not work properly with windows, or mac in the case of training.

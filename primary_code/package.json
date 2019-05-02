@@ -1,0 +1,16 @@
+{
+  "name": "beleproj",
+  "version": "1.0.0",
+  "description": "Anastasis project",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xaderfos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mustache-express": "^1.2.8"
+  }
+}

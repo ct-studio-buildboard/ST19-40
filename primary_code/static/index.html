@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Trigg'r</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <script src="/static/bully_script_simple.js" charset="utf-8"></script>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="static/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- banner slider -->
+    <link rel="stylesheet" type="text/css" href="static/css/zoomslider.css" />
+    <!--gallery -->
+    <link type="text/css" rel="stylesheet" href="static/css/cm-overlay.css" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    <!-- //gallery -->
+    <script src="static/js/jquery-2.2.3.min.js"></script>
+     <!-- numscroller -->
+     <script type="text/javascript" src="static/js/numscroller-1.0.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- //Custom Theme files -->
+</head>
+
+<body>
+    <!--/banner-bottom-->
+    <div class="w3_agilits_banner_bootm" >
+        <!-- header -->
+        <div class="container">
+            <div class="w3_agile_logo">
+                <h1>
+                    <a onclick="home()">
+                        <img src="static/images/logo.png" alt="" /></a>
+                </h1>
+            </div>
+            <div class="agileits_w3layouts_nav">
+                <div id="toggle_m_nav">
+                    <div id="m_nav_menu" class="m_nav">
+                        <div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+                        <div class="m_nav_ham" id="m_ham_2"></div>
+                        <div class="m_nav_ham" id="m_ham_3"></div>
+                    </div>
+
+                </div>
+                <div id="m_nav_container" class="m_nav wthree_bg">
+                    <nav class="menu menu--sebastian">
+                        <ul id="m_nav_list" class="m_nav menu__list">
+                            <li class="m_nav_item menu__item menu__item--current" id="m_nav_item_1">
+                                <a onclick="home()" class="menu__link"> Home </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_2">
+                                <a onclick="harrassers()" class="menu__link"> Flagged Users</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_3">
+                                <a onclick="positive()" class="menu__link">Positive Reflections</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_4">
+                                <a onclick="unsure()" class="menu__link">Review Messages</a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_5">
+                                <a onclick="resources()" class="menu__link">Wanna Chat?</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--// header -->
+    <!--//banner-bottom-->
+    <!--/banner-section-->
+        
+    <div id="demo-1" data-zs-src='["static/images/tech.jpg"]' data-zs-overlay="dots">
+            <div class="demo-inner-content">
+
+                <!--/banner-info-->
+                <div class="ih-item circle2" > 
+                    <br>
+                    <div class="img">
+                        <img src="static/images/s3.jpg" class="img-responsive" alt="img">
+                    </div> 
+                </div>
+                <div id="marquee">
+                    <div id="text">Always remember you are special.</div>
+                </div>
+                <!--/banner-ingo-->
+            </div>
+        </div><br>
+        <!--/banner-section-->
+        <!-- stats -->
+        <div id="hs" class="wthree-stats">
+            <div class="row2">
+                <div class="square"><div onclick="harrassers()" class="inner">Flagged Users</div></div>
+                <div class="square"><div onclick="positive()"class="inner">Positive Reflections</div></div>
+            </div>
+            <div class="row2">
+                <div class="square"><div onclick="unsure()" class="inner">Review Messages</div></div>
+                <div class="square"><div onclick="resources()" class="inner">Wanna Chat?</div></div>
+            </div>
+        
+        </div>
+        <!-- //stats -->
+    </div>
+        <div id="hs3" style="display:none" >
+        </div>
+
+    <!-- banner slider -->
+    <script src="static/js/modernizr-2.6.2.min.js"></script>
+    <script src="static/js/jquery.zoomslider.min.js"></script>
+    <!-- //banner slider -->
+    <!-- //gallery -->
+    <script src="static/js/jquery.tools.min.js"></script>
+    <script src="static/js/jquery.mobile.custom.min.js"></script>
+    <script src="static/js/jquery.cm-overlay.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.cm-overlay').cmOverlay();
+        });
+    </script>
+    <!-- //gallery -->
+    <!-- testimonials -->
+    <!-- required-js-files-->
+    <link href="static/css/owl.carousel.css" rel="stylesheet">
+    <script src="static/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                autoPlay: false,
+                navigation: true,
+                navigationText: true,
+                pagination: true,
+            });
+        });
+    </script>
+    <!--//required-js-files-->
+    <!-- start-smooth-scrolling -->
+    <script src="static/js/move-top.js"></script>
+    <script src="static/js/easing.js"></script>
+    <script type="text/javascript">
+    function call() 
+    {
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_call();
+    }
+    function texts() 
+    {
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_text();
+    }
+    function positive() 
+    {
+        
+
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_positive_messages();
+    }
+    function negative() 
+    {
+        
+        
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+            get_flagged_messages();
+    }
+    function unsure() 
+    {
+        
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+         get_unsure_messages();
+        
+    }
+    function messages() 
+    {
+        
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_all_messages();
+        
+    }
+    function home() 
+    {
+        
+        hide();
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            z.style.display = "block";
+        } 
+        else 
+        {
+            z.style.display = "none";
+        }
+    }
+    function resources() 
+    {
+        
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_resources();
+    }
+    function harrassers() 
+    {
+        
+        var z = document.getElementById("hs3");
+        if (z.style.display === "none") 
+        {
+            hide();
+            z.style.display = "block";
+        } 
+        get_harrassers();
+    }
+    function hide() 
+    {
+
+        var x = document.getElementById("hs");
+        if (x.style.display === "none") 
+        {
+            x.style.display = "block";
+        } 
+        else 
+        {
+            x.style.display = "none";
+        }
+    }
+    function hideuser(div) 
+    {
+
+        var x = document.getElementById(div);
+        
+        x.style.display = "none";
+
+        var a = document.getElementById(1);
+        var b = document.getElementById(2);
+        var c = document.getElementById(3);
+        if (a.style.display === "none" && b.style.display === "none" && c.style.display === "none") 
+        {
+            
+        } 
+        else 
+        {
+            home();
+        }
+    }
+    function add() 
+    {
+        
+        var z = document.getElementById("myInput");
+
+        add_user(z.value);
+        
+    }
+    function report(user) 
+    {
+        
+        build_report(user);
+        
+    }
+   
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+         var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear' 
+         };
+         */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="static/js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- navigation  -->
+    <script src="static/js/main.js"></script>
+    <!-- //navigation -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+</body>
+
+</html>

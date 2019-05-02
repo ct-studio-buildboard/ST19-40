@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title> {{ title }} </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ title }}">
+  <meta name="author" content="Xaderfos">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wtf-forms.css">
+
+  <link rel="stylesheet" href="media/styles.css">
+
+</head>
+<body>
+  <div class="font-generator-container">
+    <form class="font-generator-form">
+      <p class="font-generator-source form-group">
+        <label for="inputGroupFile">Source font: </label>
+        <input type="file" class="custom-file-input form-control-file" id="inputGroupFile">
+      </p>
+      <label class="file">
+        <input type="file" id="file" aria-label="File browser example">
+        <span class="file-custom"></span>
+      </label>
+      <p class="font-generator-conversion-options form-group">
+        <label for="destination">Convert To: </label>
+        <selecti class="form-control" id="destination">
+          {{#conversionOptions}}
+            <option value="{{value}}">{{ name }}</option>
+          {{/conversionOptions}}
+        </select>
+      </p>
+      <div class="font-generator-actions">
+        <button type="button" class="btn btn-primary"> Generate </button>
+        <button type="button" class="btn btn-dark"> Reset </button>
+      </div>
+      <div class="font-generator-images form-group">
+        <p class="font-generator-image-source">
+          <span class="source-image-title"> Source Font: </span>
+          <img class="source-image" src="" alt="Source Font PNG">
+        </p>
+        <p class="font-generator-image-destination form-group">
+          <span class="converted-image-title"> Converted Font: </span>
+          <img class="converted-image" src="" alt="Converted Font PNG">
+          <div class="converted-actions">
+              <button type="button" class="btn btn-dark"> Save </button>
+              <button type="button"> Stylize </button>
+              <button type="button"> Export </button>
+          </div>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+  <script src="media/scripts.js"></script>
+</body>
+</html>

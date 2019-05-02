@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+}
+
+.font-generator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-generator-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.font-generator-source {
+  margin-top: 10px;
+  padding: 2px;
+}
+
+
+.font-generator-conversion-options {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center
+}
+
+.font-generator-conversion-options label {
+  margin: 5px 15px 0px 0px;
+}
+
+.font-generator-actions {
+  align-self:end;
+}
+
+.font-generator-images {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.font-generator-image-source {
+  margin-right: 5px;
+}
+
+.font-generator-image-source img, .font-generator-image-destination img {
+  width: 200px;
+  height: 200px;
+}
+
+.font-generator-image-destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.font-generator-image-destination .conversion-actions {
+  align-self: flex-end;
+}
+
