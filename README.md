@@ -13,7 +13,7 @@ https://drive.google.com/file/d/1nAQziu6aOFaujHP_fSgf3LlHFBFvsHFN/view?usp=shari
 
 Running example frontend:
 1. Install the requirements specified in 'requirements.txt'
-2. In a terminal CD into the project folder and then into : "/full_models"
+2. In a terminal CD into the project folder and then into : "/primary_code"
 3. From that terminal location run app.py
 4. In chrome run http://127.0.0.1:5000/
 5. Upload any jpg of font to see it's mapping in greek. There is a sample letter in the file. You can also try other
