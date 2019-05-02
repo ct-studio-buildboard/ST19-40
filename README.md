@@ -9,7 +9,7 @@ Runtime Instructions and parameters:
 
 Prior to running:
 Place the file from the link below in file in 'full_models' named as 'gen_D'
-
+https://drive.google.com/file/d/1nAQziu6aOFaujHP_fSgf3LlHFBFvsHFN/view?usp=sharing
 
 Running example frontend:
 1. Install the requirements specified in 'requirements.txt'
